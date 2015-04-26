@@ -1,0 +1,55 @@
+Hadoop-Oozie-Job
+
+DESCRIPTION
+
+Encapsulates an Oozie job which you configure,
+submit to a remote Oozie server (via the REST API),
+run, and inquire the status of.
+Also allows you to "attach" files to the job
+which will be uploaded to HDFS when the job is submitted
+(these files will typically be mapper and reducer code,
+and a workflow description file in XML format).
+
+Note: this module has only been tested on simple map-reduce jobs in Hadoop streaming mode.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Hadoop::Oozie::Job
+
+You can also look for information at:
+
+    RT, CPAN's request tracker (report bugs here)
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Hadoop-Oozie-Job
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Hadoop-Oozie-Job
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Hadoop-Oozie-Job
+
+    Search CPAN
+        http://search.cpan.org/dist/Hadoop-Oozie-Job/
+
+
+LICENSE AND COPYRIGHT
+
+Copyright (C) 2015 Martin Thurn
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See L<http://dev.perl.org/licenses/> for more information.
+
